@@ -3,16 +3,20 @@ import { useState } from 'react';
 
 export default function App() {
   const useGenerateRandomColor = () => {
-    //
+    // Using the hook for creating the variable
     const [color, setColor] = useState('');
+    // Defining the function for returning a random color
     const generateColor = () => {
+      // Getting random 16 characters converted to string and reduced to six
       setColor(Math.random().toString(16).slice(-6));
     };
+    // Returning the color
     return { color, generateColor };
   };
-
+  // Create function which returns the divs and buttons
   const { color, generateColor } = useGenerateRandomColor();
   return (
+    // Creating div around
     <div
       style={{
         display: 'flex',
@@ -20,6 +24,7 @@ export default function App() {
         justifyContent: 'center',
       }}
     >
+      {/* Creating the generate-button */}
       <button
         style={{
           padding: '8px 16px',
@@ -32,7 +37,7 @@ export default function App() {
       >
         Generate
       </button>
-
+      {/* Creating the colored div */}
       <div
         style={{
           height: '400px',
@@ -45,6 +50,7 @@ export default function App() {
           borderRadius: '12px',
         }}
       >
+        {/* Creating the button with hex-code */}
         <button
           style={{
             padding: '20px 12px',
