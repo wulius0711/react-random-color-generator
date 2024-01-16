@@ -58,7 +58,7 @@ export default function App() {
             fontSize: '1rem',
           }}
         >
-          background color: #{color}
+          Generated Color: #{color}
         </button>
       </div>
     </div>
