@@ -37,7 +37,7 @@ export default function App() {
       >
         Generate
       </button>
-      {/* Creating the colored div */}
+
       <div
         style={{
           height: '400px',
@@ -50,16 +50,15 @@ export default function App() {
           borderRadius: '12px',
         }}
       >
-        {/* Creating the button with hex-code */}
-        <button
+        {/* <button
           style={{
             padding: '20px 12px',
             borderRadius: '8px',
             fontSize: '1rem',
           }}
-        >
-          Generated Color: #{color}
-        </button>
+        > */}
+        Generated color: #{color}
+        {/* </button> */}
       </div>
     </div>
   );
