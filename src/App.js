@@ -57,7 +57,7 @@ export default function App() {
             fontSize: '1rem',
           }}
         > */}
-        Generated color: #{color}
+        Generated Color: #{color}
         {/* </button> */}
       </div>
     </div>
